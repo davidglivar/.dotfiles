@@ -1,0 +1,5 @@
+[user]
+	name = David Glivar
+	email = davidglivar@gmail.com
+[core]
+	editor = /usr/local/bin/vim
