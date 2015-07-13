@@ -69,8 +69,10 @@ fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if [ -f `brew --prefix`/etc/bash_completion  ]; then
-  source `brew --prefix`/etc/bash_completion
+if command -v brew >/dev/null; then
+  if [ -f `brew --prefix`/etc/bash_completion  ]; then
+    source `brew --prefix`/etc/bash_completion
+  fi
 fi
 
 # Terminal colors (after installing GNU coreutils)
