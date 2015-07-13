@@ -1,1 +1,19 @@
 nmap ,w :w<cr>
+
+nmap <c-o> :put =''<cr>
+nmap <c-i> :put! =''<cr>
+
+nmap K ddkP
+nmap J ddp
+nmap H <<
+nmap L >>
+
+vmap K xkP`[V`]
+vmap J xp`[V`]
+vmap L >gv
+vmap H <gv
+
+imap <C-k> <Up>
+imap <C-j> <Down>
+imap <C-l> <Right>
+imap <C-h> <Left>
