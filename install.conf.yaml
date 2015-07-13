@@ -5,4 +5,7 @@
     ~/.vimrc: vimrc
     ~/.vim: vim/
     ~/.profile: profile
-
+    ~/.bashrc: bashrc
+    ~/.inputrc: inputrc
+    ~/.tmux.conf: tmux.conf
+    ~/.xvimrc: xvimrc
