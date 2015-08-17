@@ -88,3 +88,6 @@ export PS1="$NM[ $HI\w$HII\$(__git_ps1) $NM] $IN"
 if [ -f ~/.bashrc.local ]; then
   source ~/.bashrc.local
 fi
+
+export NVM_DIR="/Users/david.glivar/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

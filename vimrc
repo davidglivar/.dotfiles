@@ -15,10 +15,12 @@ Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'Valloric/YouCompleteMe'
 Plug 'vim-scripts/JavaScript-Indent'
 "   syntax
 Plug 'Blackrush/vim-gocode'
 Plug 'cespare/vim-toml'
+Plug 'elixir-lang/vim-elixir'
 Plug 'groenewege/vim-less'
 Plug 'jelera/vim-javascript-syntax'
 Plug 'tpope/vim-cucumber'
@@ -45,6 +47,7 @@ set t_Co=256
 colorscheme sinner
 
 autocmd! BufWritePost sinner.vim source %
+autocmd CompleteDone * pclose
 
 let mapleader=","
 

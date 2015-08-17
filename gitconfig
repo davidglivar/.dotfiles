@@ -3,3 +3,5 @@
 	email = davidglivar@gmail.com
 [core]
 	editor = /usr/local/bin/vim
+[commit]
+  template = ~/.gitmessage
