@@ -12,6 +12,13 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
 export PATH=$PATH:/usr/local/share/npm/bin
+export PATH=$PATH:$HOME/.rvm/bin
+
+export NVM_DIR=/Users/davidglivar/.nvm
+
+source $(brew --prefix nvm)/nvm.sh
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 if [ -f ~/.profile.local ]; then
   source ~/.profile.local

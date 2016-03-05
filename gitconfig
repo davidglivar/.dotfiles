@@ -2,6 +2,8 @@
 	name = David Glivar
 	email = davidglivar@gmail.com
 [core]
-	editor = /usr/local/bin/vim
+	editor = /usr/local/bin/nvim
 [commit]
   template = ~/.gitmessage
+[github]
+	user = davidglivar

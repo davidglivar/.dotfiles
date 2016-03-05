@@ -1,4 +1,3 @@
-
 # if not running interactively, don't do anything
 case $- in
   *i*) ;;
@@ -35,10 +34,6 @@ esac
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls -l --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
@@ -46,16 +41,7 @@ else
     export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
     export GREP_OPTIONS="--color"
     export CLICOLOR=TRUE;
-    alias ls="ls -l"
-    alias ll="ls -la"
 fi
-
-# lazy
-alias cd..="cd .."
-alias ..="cd .."
-
-# tmux
-alias tmux="TERM=xterm-256color tmux"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -88,6 +74,3 @@ export PS1="$NM[ $HI\w$HII\$(__git_ps1) $NM] $IN"
 if [ -f ~/.bashrc.local ]; then
   source ~/.bashrc.local
 fi
-
-export NVM_DIR="/Users/david.glivar/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

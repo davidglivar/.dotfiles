@@ -10,6 +10,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'kien/ctrlp.vim'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'msanders/cocoa.vim'
+Plug 'phildawes/racer'
 Plug 'scrooloose/nerdcommenter'
 Plug 'tomtom/tlib_vim'
 Plug 'tpope/vim-endwise'
@@ -48,6 +49,9 @@ colorscheme sinner
 
 autocmd! BufWritePost sinner.vim source %
 autocmd CompleteDone * pclose
+
+autocmd FileType c setlocal shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
 
 let mapleader=","
 
@@ -171,3 +175,6 @@ let $LOCALFILE=expand("~/.vimrc.local")
 if filereadable($LOCALFILE)
     source $LOCALFILE
 endif
+
+let g:racer_cmd ="/usr/local/src/racer/target/release/racer"
+let $RUST_SRC_PATH="/usr/local/src/rustc/src/"

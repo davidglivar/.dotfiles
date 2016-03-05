@@ -2,10 +2,13 @@
 
 - link:
     ~/.gitconfig: gitconfig
+    ~/.gitmessage: gitmessage
     ~/.vimrc: vimrc
     ~/.vim: vim/
     ~/.profile: profile
+    ~/.bash_aliases: bash_aliases
     ~/.bashrc: bashrc
     ~/.inputrc: inputrc
     ~/.tmux.conf: tmux.conf
     ~/.xvimrc: xvimrc
+    ~/.config/nvim/init.vim: config/nvim/init.vim
