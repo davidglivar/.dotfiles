@@ -15,9 +15,11 @@ export PATH=$PATH:/usr/local/share/npm/bin
 export PATH=$PATH:$HOME/.rvm/bin
 export PATH=$PATH:$HOME/.cargo/bin
 
-export NVM_DIR=/Users/davidglivar/.nvm
+export NVM_DIR=~/.nvm
 
-source $(brew --prefix nvm)/nvm.sh
+if hash brew 2>/dev/null; then
+  source $(brew --prefix nvm)/nvm.sh
+fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
