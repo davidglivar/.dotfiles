@@ -1,8 +1,8 @@
 let mapleader=","
 
 "   rust/racer config
-let g:racer_cmd ="/usr/local/src/racer/target/release/racer"
-let $RUST_SRC_PATH="/usr/local/src/rustc/src/"
+let g:racer_cmd ="~/.cargo/bin/racer"
+let $RUST_SRC_PATH="~/src/github.com/rust-lang/rust/src"
 
 "   Use deoplete.
 let g:deoplete#enable_at_startup=1
@@ -34,6 +34,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-surround'
+Plug 'racer-rust/vim-racer', { 'for': 'rust' }
 
 "   syntax
 Plug 'Blackrush/vim-gocode', { 'for': 'go' }

@@ -13,6 +13,7 @@ export PATH=/usr/local/sbin:$PATH
 
 export PATH=$PATH:/usr/local/share/npm/bin
 export PATH=$PATH:$HOME/.rvm/bin
+export PATH=$PATH:$HOME/.cargo/bin
 
 export NVM_DIR=/Users/davidglivar/.nvm
 
