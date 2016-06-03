@@ -12,14 +12,4 @@ alias tmux="TERM=xterm-256color tmux"
 
 alias so=". ~/.profile"
 
-alias dock="eval '$(docker-machine env default)' && clear && echo '
-                    ##        .            
-              ## ## ##       ==            
-           ## ## ## ##      ===            
-       /\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\___/ ===        
-  ~~~ {~~ ~~~~ ~~~ ~~~~ ~~ ~ /  ===- ~~~   
-       \______ o          __/            
-         \    \        __/             
-          \____\______/                
-
-'"
+alias dock="bash --login '/Applications/Docker/Docker Quickstart Terminal.app/Contents/Resources/Scripts/start.sh'"

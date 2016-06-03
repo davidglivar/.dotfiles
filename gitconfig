@@ -1,5 +1,5 @@
 [user]
-	name = David Glivar
+	name = David
 	email = davidglivar@gmail.com
 [core]
 	editor = /usr/local/bin/nvim
@@ -7,3 +7,5 @@
   template = ~/.gitmessage
 [github]
 	user = davidglivar
+[color]
+	ui = true

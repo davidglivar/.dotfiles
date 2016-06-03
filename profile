@@ -17,10 +17,6 @@ export PATH=$PATH:$HOME/.cargo/bin
 
 export NVM_DIR=~/.nvm
 
-if hash brew 2>/dev/null; then
-  source $(brew --prefix nvm)/nvm.sh
-fi
-
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 if [ -f ~/.profile.local ]; then
